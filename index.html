@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Übersicht</title>
+<style>
+  :root {
+    --bg: #f5f5f7;
+    --surface: #ffffff;
+    --text: #1d1d1f;
+    --text-muted: #6e6e73;
+    --border: #e5e5ea;
+    --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-hover: 0 8px 20px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0b0d;
+      --surface: #1a1a1d;
+      --text: #f2f2f3;
+      --text-muted: #9a9a9e;
+      --border: #2c2c30;
+      --shadow: 0 1px 3px rgba(0,0,0,0.4);
+      --shadow-hover: 0 10px 24px rgba(0,0,0,0.5);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12vh 20px 40px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  header p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    width: 100%;
+    max-width: 720px;
+  }
+  a.card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--shadow);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  a.card:hover, a.card:focus-visible {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+  }
+  .icon {
+    font-size: 1.75rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  .card-text h2 {
+    margin: 0 0 4px;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+  .card-text p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+  footer {
+    margin-top: 48px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Projekte</h1>
+  <p>Zentraler Einstieg zu allen Apps</p>
+</header>
+
+<div class="grid" id="grid"></div>
+
+<footer>Weitere Projekte folgen hier.</footer>
+
+<script>
+  const projects = [
+    { name: "Zeiterfassung", desc: "Zeitkonto – Start/Stop-Zeiterfassung", icon: "⏱️", url: "https://luizz28-goat.github.io/Zeiterfassung/" },
+    { name: "Griffwerk", desc: "Gitarrencoach", icon: "🎸", url: "https://luizz28-goat.github.io/guitar-song-coach/" },
+    // neue Projekte hier ergänzen: { name, desc, icon, url }
+  ];
+
+  document.getElementById("grid").innerHTML = projects.map(p => `
+    <a class="card" href="${p.url}">
+      <span class="icon">${p.icon}</span>
+      <span class="card-text">
+        <h2>${p.name}</h2>
+        <p>${p.desc}</p>
+      </span>
+    </a>
+  `).join("");
+</script>
+
+</body>
+</html>
