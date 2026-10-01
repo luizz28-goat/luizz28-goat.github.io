@@ -122,10 +122,10 @@
   document.getElementById("grid").innerHTML = projects.map(p => `
     <a class="card" href="${p.url}">
       <span class="icon">${p.icon}</span>
-      <span class="card-text">
+      <div class="card-text">
         <h2>${p.name}</h2>
         <p>${p.desc}</p>
-      </span>
+      </div>
     </a>
   `).join("");
 </script>
