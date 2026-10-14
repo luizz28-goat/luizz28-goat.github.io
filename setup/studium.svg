@@ -51,12 +51,11 @@
   
   <!-- Titel -->
   <text x="60" y="80" font-size="40" font-weight="700" fill="#f1f0ff">Das Studium-Setup</text>
-  <text x="60" y="114" font-size="18" fill="#9ca3c4">Gaming &amp; KI in einem PC · Laptop für die Uni · kompaktes Homelab</text>
+  <text x="60" y="114" font-size="18" fill="#9ca3c4">Alles lokal · Gaming &amp; KI · Laptop für die Uni · kompaktes Homelab</text>
 
   <!-- Verbindungen -->
   <g fill="none" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.55" stroke-dasharray="6 5">
     <path d="M1300 612 C 1300 520 1100 420 300 420"/>
-    <path d="M1360 618 C 1380 500 1330 380 1290 300"/>
   </g>
 
 <!-- ===== Schreibtisch ===== -->
@@ -123,18 +122,12 @@
   <rect x="395" y="586" width="240" height="14" rx="3" fill="#1c1f28"/>
   <rect x="395" y="586" width="240" height="3" rx="1.5" fill="#8b5cf6" opacity="0.7"/>
   <ellipse cx="680" cy="595" rx="12" ry="6" fill="#1c1f28" stroke="#8b5cf6" stroke-width="1"/>
-  <rect x="955" y="530" width="6" height="70" fill="#2a2d38"/>
-  <ellipse cx="958" cy="598" rx="22" ry="4" fill="#2a2d38"/>
-  <path d="M936 548 C 936 505, 980 505, 980 548" fill="none" stroke="#3b3f4f" stroke-width="6"/>
-  <rect x="930" y="540" width="12" height="24" rx="5" fill="#2a2d38"/>
-  <rect x="974" y="540" width="12" height="24" rx="5" fill="#2a2d38"/>
-
-  <!-- ===== Cloud ===== -->
-  <g>
-    <path d="M1150 300 C 1110 300 1105 248 1145 242 C 1150 200 1210 190 1230 225 C 1255 195 1310 205 1310 245 C 1350 245 1355 300 1315 300 Z" fill="#1a1d2b" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.7"/>
-    <text x="1228" y="268" font-size="13" fill="#e2e8f0" text-anchor="middle" font-weight="700">Cloud-GPU</text>
-    <text x="1228" y="286" font-size="11" fill="#9ca3c4" text-anchor="middle">&amp; Uni-Cluster</text>
-  </g>
+  <!-- KI-Box (128 GB Unified Memory) -->
+  <ellipse cx="968" cy="560" rx="70" ry="70" fill="url(#glowPurple)"/>
+  <rect x="932" y="512" width="72" height="88" rx="6" fill="#1c1f28" stroke="#8b5cf6" stroke-width="1.5"/>
+  <g fill="#0b0c10"><rect x="942" y="524" width="52" height="4" rx="2"/><rect x="942" y="532" width="52" height="4" rx="2"/><rect x="942" y="540" width="52" height="4" rx="2"/><rect x="942" y="548" width="52" height="4" rx="2"/></g>
+  <circle cx="992" cy="588" r="2.5" fill="#a78bfa"/>
+  <text x="968" y="576" font-size="8" fill="#a78bfa" text-anchor="middle">128 GB</text>
 
   <!-- ===== Sideboard Homelab ===== -->
   <rect x="1100" y="640" width="320" height="180" rx="4" fill="url(#wood)"/>
@@ -166,20 +159,17 @@
     <text x="135" y="215" fill="#9ca3c4">9800X3D · RTX 5090 · 96 GB RAM · 360er-AIO</text>
     <text x="520" y="315" fill="#f1f0ff" font-weight="700" font-size="16" text-anchor="middle">4K-OLED · 240 Hz</text>
     <text x="830" y="462" fill="#f1f0ff" font-weight="700" font-size="15" text-anchor="middle">Uni-Laptop</text>
-
-    <line x1="1336" y1="252" x2="1490" y2="252" stroke="#6b7190"/>
-    <text x="1496" y="248" fill="#f1f0ff" font-weight="700" font-size="16">Bei Bedarf</text>
-    <text x="1496" y="267" fill="#9ca3c4">große Modelle stunden-</text>
-    <text x="1496" y="284" fill="#9ca3c4">weise mieten</text>
+    <text x="968" y="482" fill="#f1f0ff" font-weight="700" font-size="15" text-anchor="middle">KI-Box</text>
+    <text x="968" y="500" fill="#9ca3c4" font-size="12" text-anchor="middle">große Modelle lokal</text>
 
     <line x1="1258" y1="560" x2="1490" y2="470" stroke="#6b7190"/>
     <text x="1496" y="466" fill="#f1f0ff" font-weight="700" font-size="16">NAS · 4 Schächte</text>
-    <text x="1496" y="485" fill="#9ca3c4">Speicher · Backups</text>
+    <text x="1496" y="485" fill="#9ca3c4">Speicher · Backups lokal</text>
     <text x="1496" y="502" fill="#9ca3c4">n8n · Immich · Docker</text>
 
     <line x1="1307" y1="612" x2="1490" y2="580" stroke="#6b7190"/>
     <text x="1496" y="576" fill="#f1f0ff" font-weight="700" font-size="16">Raspberry Pi 5</text>
-    <text x="1496" y="595" fill="#9ca3c4">Werbeblocker · Tailscale</text>
+    <text x="1496" y="595" fill="#9ca3c4">Werbeblocker · WireGuard-VPN</text>
 
     <line x1="1404" y1="630" x2="1490" y2="680" stroke="#6b7190"/>
     <text x="1496" y="684" fill="#f1f0ff" font-weight="700" font-size="16">Reiserouter</text>
@@ -188,7 +178,7 @@
 
   <g font-size="13" fill="#9ca3c4">
     <line x1="60" y1="900" x2="100" y2="900" stroke="#22d3ee" stroke-width="2" stroke-dasharray="6 5"/>
-    <text x="110" y="905">Netzwerk / Fernzugriff</text>
-    <text x="60" y="940" fill="#6b7190">Schätzung Anschaffung ≈ 10.000 – 15.000 € · Strom ≈ 300 – 500 € / Jahr</text>
+    <text x="110" y="905">Heimnetz · Fernzugriff nur auf eigene Geräte (WireGuard)</text>
+    <text x="60" y="940" fill="#6b7190">Schätzung Anschaffung ≈ 12.000 – 17.500 € · Strom ≈ 350 – 550 € / Jahr</text>
   </g>
 </svg>
