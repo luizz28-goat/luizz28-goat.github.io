@@ -50,8 +50,8 @@
 
   
   <!-- Titel -->
-  <text x="60" y="80" font-size="40" font-weight="700" fill="#f1f0ff">Das Studium-Setup</text>
-  <text x="60" y="114" font-size="18" fill="#9ca3c4">Alles lokal · Gaming &amp; KI · Laptop für die Uni · kompaktes Homelab</text>
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#f1f0ff">Das Beste unter 30.000 €</text>
+  <text x="60" y="114" font-size="18" fill="#9ca3c4">Alles lokal · Gaming-PC · KI-Server · Uni-Laptop · Homelab</text>
 
   <!-- Verbindungen -->
   <g fill="none" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.55" stroke-dasharray="6 5">
@@ -122,12 +122,22 @@
   <rect x="395" y="586" width="240" height="14" rx="3" fill="#1c1f28"/>
   <rect x="395" y="586" width="240" height="3" rx="1.5" fill="#8b5cf6" opacity="0.7"/>
   <ellipse cx="680" cy="595" rx="12" ry="6" fill="#1c1f28" stroke="#8b5cf6" stroke-width="1"/>
-  <!-- KI-Box (128 GB Unified Memory) -->
-  <ellipse cx="968" cy="560" rx="70" ry="70" fill="url(#glowPurple)"/>
-  <rect x="932" y="512" width="72" height="88" rx="6" fill="#1c1f28" stroke="#8b5cf6" stroke-width="1.5"/>
-  <g fill="#0b0c10"><rect x="942" y="524" width="52" height="4" rx="2"/><rect x="942" y="532" width="52" height="4" rx="2"/><rect x="942" y="540" width="52" height="4" rx="2"/><rect x="942" y="548" width="52" height="4" rx="2"/></g>
-  <circle cx="992" cy="588" r="2.5" fill="#a78bfa"/>
-  <text x="968" y="576" font-size="8" fill="#a78bfa" text-anchor="middle">128 GB</text>
+  <!-- Headset -->
+  <rect x="955" y="530" width="6" height="70" fill="#2a2d38"/>
+  <ellipse cx="958" cy="598" rx="22" ry="4" fill="#2a2d38"/>
+  <path d="M936 548 C 936 505, 980 505, 980 548" fill="none" stroke="#3b3f4f" stroke-width="6"/>
+  <rect x="930" y="540" width="12" height="24" rx="5" fill="#2a2d38"/>
+  <rect x="974" y="540" width="12" height="24" rx="5" fill="#2a2d38"/>
+
+  <!-- ===== KI-Server ===== -->
+  <ellipse cx="1055" cy="730" rx="90" ry="110" fill="url(#glowPurple)"/>
+  <rect x="1015" y="640" width="80" height="180" rx="6" fill="#0b0c10" stroke="#8b5cf6" stroke-width="1.5"/>
+  <rect x="1024" y="652" width="62" height="156" rx="3" fill="#12141b"/>
+  <rect x="1036" y="662" width="38" height="30" rx="3" fill="#1f232e" stroke="#4b5063"/>
+  <rect x="1028" y="712" width="54" height="26" rx="3" fill="#1a1a1a" stroke="#c9a227" stroke-width="1.5"/>
+  <rect x="1032" y="722" width="40" height="7" rx="2" fill="#c9a227" opacity="0.8"/>
+  <circle cx="1086" cy="648" r="2.5" fill="#34d399"/>
+  <rect x="1015" y="640" width="80" height="180" rx="6" fill="url(#glass)"/>
 
   <!-- ===== Sideboard Homelab ===== -->
   <rect x="1100" y="640" width="320" height="180" rx="4" fill="url(#wood)"/>
@@ -156,20 +166,20 @@
   <g font-size="14">
     <line x1="221" y1="288" x2="221" y2="222" stroke="#6b7190"/>
     <text x="135" y="196" fill="#f1f0ff" font-weight="700" font-size="16">Gaming- &amp; KI-PC</text>
-    <text x="135" y="215" fill="#9ca3c4">9800X3D · RTX 5090 · 96 GB RAM · 360er-AIO</text>
+    <text x="135" y="215" fill="#9ca3c4">9800X3D · RTX 5090 · 64 GB RAM · 360er-AIO</text>
     <text x="520" y="315" fill="#f1f0ff" font-weight="700" font-size="16" text-anchor="middle">4K-OLED · 240 Hz</text>
     <text x="830" y="462" fill="#f1f0ff" font-weight="700" font-size="15" text-anchor="middle">Uni-Laptop</text>
-    <text x="968" y="482" fill="#f1f0ff" font-weight="700" font-size="15" text-anchor="middle">KI-Box</text>
-    <text x="968" y="500" fill="#9ca3c4" font-size="12" text-anchor="middle">große Modelle lokal</text>
+    <text x="1055" y="850" fill="#f1f0ff" font-weight="700" font-size="15" text-anchor="middle">KI-Server</text>
+    <text x="1055" y="868" fill="#c9a227" font-size="12" text-anchor="middle">RTX PRO 6000 · 96 GB</text>
 
     <line x1="1258" y1="560" x2="1490" y2="470" stroke="#6b7190"/>
-    <text x="1496" y="466" fill="#f1f0ff" font-weight="700" font-size="16">NAS · 4 Schächte</text>
+    <text x="1496" y="466" fill="#f1f0ff" font-weight="700" font-size="16">NAS · 4× 20 TB</text>
     <text x="1496" y="485" fill="#9ca3c4">Speicher · Backups lokal</text>
     <text x="1496" y="502" fill="#9ca3c4">n8n · Immich · Docker</text>
 
     <line x1="1307" y1="612" x2="1490" y2="580" stroke="#6b7190"/>
     <text x="1496" y="576" fill="#f1f0ff" font-weight="700" font-size="16">Raspberry Pi 5</text>
-    <text x="1496" y="595" fill="#9ca3c4">Werbeblocker · WireGuard-VPN</text>
+    <text x="1496" y="595" fill="#9ca3c4">Werbeblocker · VPN</text>
 
     <line x1="1404" y1="630" x2="1490" y2="680" stroke="#6b7190"/>
     <text x="1496" y="684" fill="#f1f0ff" font-weight="700" font-size="16">Reiserouter</text>
@@ -179,6 +189,6 @@
   <g font-size="13" fill="#9ca3c4">
     <line x1="60" y1="900" x2="100" y2="900" stroke="#22d3ee" stroke-width="2" stroke-dasharray="6 5"/>
     <text x="110" y="905">Heimnetz · Fernzugriff nur auf eigene Geräte (WireGuard)</text>
-    <text x="60" y="940" fill="#6b7190">Schätzung Anschaffung ≈ 12.000 – 17.500 € · Strom ≈ 350 – 550 € / Jahr</text>
+    <text x="60" y="940" fill="#6b7190">Schätzung Anschaffung ≈ 25.000 – 29.500 € · Strom ≈ 450 – 700 € / Jahr</text>
   </g>
 </svg>
