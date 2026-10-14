@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 1000" width="1700" height="1000" font-family="DejaVu Sans, Arial, sans-serif">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0d0f17"/>
+      <stop offset="1" stop-color="#1a1d2b"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#15161d"/>
+      <stop offset="1" stop-color="#08090c"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b1055"/>
+      <stop offset="0.55" stop-color="#d4418e"/>
+      <stop offset="1" stop-color="#ff9a44"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.10"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.02"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a3a2c"/>
+      <stop offset="1" stop-color="#2f241b"/>
+    </linearGradient>
+    <radialGradient id="glowPurple" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowGreen" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#34d399" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#34d399" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <!-- Raum -->
+  <rect width="1700" height="1000" fill="url(#wall)"/>
+  <rect y="820" width="1700" height="180" fill="url(#floor)"/>
+  <line x1="0" y1="820" x2="1700" y2="820" stroke="#2a2d3a" stroke-width="2"/>
+
+  <!-- LED-Leiste hinter dem Schreibtisch -->
+  <ellipse cx="560" cy="460" rx="520" ry="230" fill="url(#glowPurple)"/>
+  <rect x="140" y="268" width="860" height="5" rx="2" fill="#a78bfa" filter="url(#blur)"/>
+  <rect x="140" y="269" width="860" height="3" rx="1.5" fill="#c4b5fd"/>
+  <ellipse cx="1250" cy="660" rx="220" ry="200" fill="url(#glowGreen)"/>
+
+  
+  <!-- Titel -->
+  <text x="60" y="80" font-size="40" font-weight="700" fill="#f1f0ff">Das Beste unter 30.000 €</text>
+  <text x="60" y="114" font-size="18" fill="#9ca3c4">Alles lokal · Gaming-PC · KI-Server · Uni-Laptop · Homelab</text>
+
+  <!-- Verbindungen -->
+  <g fill="none" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.55" stroke-dasharray="6 5">
+    <path d="M1300 612 C 1300 520 1100 420 300 420"/>
+  </g>
+
+<!-- ===== Schreibtisch ===== -->
+  <rect x="110" y="600" width="900" height="24" rx="4" fill="#2c2f3a"/>
+  <rect x="110" y="600" width="900" height="4" rx="2" fill="#4a4f60"/>
+  <rect x="140" y="624" width="22" height="196" fill="#22252e"/>
+  <rect x="958" y="624" width="22" height="196" fill="#22252e"/>
+  <rect x="140" y="700" width="840" height="10" fill="#1d2028"/>
+
+  
+  <!-- ===== Gaming- & KI-PC (AIO) ===== -->
+  <ellipse cx="222" cy="450" rx="150" ry="190" fill="url(#glowCyan)"/>
+  <rect x="135" y="290" width="172" height="310" rx="8" fill="#0b0c10" stroke="#3b3f4f" stroke-width="2"/>
+  <g fill="#14161d" stroke="#8b5cf6" stroke-width="2.5">
+    <circle cx="170" cy="312" r="15"/><circle cx="221" cy="312" r="15"/><circle cx="272" cy="312" r="15"/>
+  </g>
+  <g fill="#8b5cf6" opacity="0.6"><circle cx="170" cy="312" r="4"/><circle cx="221" cy="312" r="4"/><circle cx="272" cy="312" r="4"/></g>
+  <rect x="160" y="338" width="133" height="190" rx="3" fill="#1b1e27"/>
+  <rect x="270" y="345" width="16" height="60" rx="2" fill="#3a3f52"/>
+  <rect x="275" y="350" width="3" height="50" fill="#a78bfa"/>
+  <rect x="281" y="350" width="3" height="50" fill="#a78bfa"/>
+  <!-- AIO-Pumpe -->
+  <circle cx="225" cy="374" r="22" fill="#0f172a" stroke="#22d3ee" stroke-width="2"/>
+  <circle cx="225" cy="374" r="12" fill="#22d3ee" opacity="0.8"/>
+  <g fill="none" stroke="#2a2d38" stroke-width="7" stroke-linecap="round">
+    <path d="M212 356 C 205 340 190 335 182 326"/><path d="M238 356 C 245 340 258 335 262 326"/>
+  </g>
+  <!-- GPU luftgekühlt -->
+  <rect x="148" y="436" width="148" height="44" rx="5" fill="#1f2230" stroke="#4b5063"/>
+  <g fill="#0b0c10" stroke="#4b5063"><circle cx="178" cy="458" r="15"/><circle cx="222" cy="458" r="15"/><circle cx="266" cy="458" r="15"/></g>
+  <rect x="148" y="436" width="148" height="4" rx="2" fill="#22d3ee" opacity="0.8"/>
+  <text x="222" y="496" font-size="9" fill="#67e8f9" text-anchor="middle">RTX 5090 · 32 GB</text>
+  <rect x="140" y="540" width="162" height="54" rx="4" fill="#15171f"/>
+  <text x="221" y="572" font-size="10" fill="#6b7190" text-anchor="middle" letter-spacing="2">1000 W</text>
+  <rect x="135" y="290" width="172" height="310" rx="8" fill="url(#glass)"/>
+
+<!-- ===== Hauptmonitor 4K-OLED ===== -->
+  <rect x="505" y="556" width="30" height="40" fill="#1f222b"/>
+  <ellipse cx="520" cy="598" rx="70" ry="6" fill="#1f222b"/>
+  <rect x="325" y="325" width="390" height="235" rx="6" fill="#050507"/>
+  <rect x="333" y="333" width="374" height="219" fill="url(#sky)"/>
+  <circle cx="560" cy="440" r="36" fill="#ffd27d" opacity="0.9"/>
+  <polygon points="333,552 333,470 400,420 470,480 540,410 610,470 660,430 707,470 707,552" fill="#3b0f4f"/>
+  <polygon points="333,552 333,505 420,470 500,510 590,465 707,515 707,552" fill="#1a0828"/>
+  <!-- HUD -->
+  <rect x="345" y="345" width="70" height="8" rx="4" fill="#ffffff" opacity="0.55"/>
+  <rect x="345" y="345" width="48" height="8" rx="4" fill="#4ade80"/>
+  <text x="697" y="356" font-size="11" fill="#ffffff" text-anchor="end" opacity="0.85">240 FPS</text>
+
+  
+  <!-- ===== Laptop ===== -->
+  <polygon points="740,600 920,600 908,590 752,590" fill="#3a3e4a"/>
+  <rect x="758" y="478" width="144" height="112" rx="5" fill="#9aa1b2"/>
+  <rect x="763" y="483" width="134" height="102" rx="2" fill="#0f1117"/>
+  <rect x="763" y="483" width="134" height="14" fill="#1a1d27"/>
+  <text x="769" y="493" font-size="8" fill="#9ca3c4">Vorlesung · Notizen</text>
+  <g fill="#9ca3c4" opacity="0.5">
+    <rect x="770" y="505" width="90" height="3"/><rect x="770" y="513" width="110" height="3"/><rect x="770" y="521" width="70" height="3"/>
+  </g>
+  <rect x="770" y="532" width="120" height="44" rx="4" fill="#262a36"/>
+  <polyline points="776,568 795,556 812,562 830,545 850,550 870,538 884,541" fill="none" stroke="#a78bfa" stroke-width="2"/>
+
+  <!-- Tastatur, Maus, Headset -->
+  <rect x="395" y="586" width="240" height="14" rx="3" fill="#1c1f28"/>
+  <rect x="395" y="586" width="240" height="3" rx="1.5" fill="#8b5cf6" opacity="0.7"/>
+  <ellipse cx="680" cy="595" rx="12" ry="6" fill="#1c1f28" stroke="#8b5cf6" stroke-width="1"/>
+  <!-- Headset -->
+  <rect x="955" y="530" width="6" height="70" fill="#2a2d38"/>
+  <ellipse cx="958" cy="598" rx="22" ry="4" fill="#2a2d38"/>
+  <path d="M936 548 C 936 505, 980 505, 980 548" fill="none" stroke="#3b3f4f" stroke-width="6"/>
+  <rect x="930" y="540" width="12" height="24" rx="5" fill="#2a2d38"/>
+  <rect x="974" y="540" width="12" height="24" rx="5" fill="#2a2d38"/>
+
+  <!-- ===== KI-Server ===== -->
+  <ellipse cx="1055" cy="730" rx="90" ry="110" fill="url(#glowPurple)"/>
+  <rect x="1015" y="640" width="80" height="180" rx="6" fill="#0b0c10" stroke="#8b5cf6" stroke-width="1.5"/>
+  <rect x="1024" y="652" width="62" height="156" rx="3" fill="#12141b"/>
+  <rect x="1036" y="662" width="38" height="30" rx="3" fill="#1f232e" stroke="#4b5063"/>
+  <rect x="1028" y="712" width="54" height="26" rx="3" fill="#1a1a1a" stroke="#c9a227" stroke-width="1.5"/>
+  <rect x="1032" y="722" width="40" height="7" rx="2" fill="#c9a227" opacity="0.8"/>
+  <circle cx="1086" cy="648" r="2.5" fill="#34d399"/>
+  <rect x="1015" y="640" width="80" height="180" rx="6" fill="url(#glass)"/>
+
+  <!-- ===== Sideboard Homelab ===== -->
+  <rect x="1100" y="640" width="320" height="180" rx="4" fill="url(#wood)"/>
+  <rect x="1100" y="640" width="320" height="8" fill="#5a4735"/>
+  <line x1="1260" y1="660" x2="1260" y2="805" stroke="#241b14" stroke-width="2"/>
+  <circle cx="1248" cy="730" r="3" fill="#8a7560"/><circle cx="1272" cy="730" r="3" fill="#8a7560"/>
+  <!-- NAS 4-Bay -->
+  <rect x="1118" y="530" width="140" height="110" rx="6" fill="#16181f" stroke="#3b3f4f"/>
+  <g fill="#23262f" stroke="#2f3340">
+    <rect x="1128" y="542" width="26" height="86" rx="2"/><rect x="1159" y="542" width="26" height="86" rx="2"/><rect x="1190" y="542" width="26" height="86" rx="2"/><rect x="1221" y="542" width="26" height="86" rx="2"/>
+  </g>
+  <g fill="#34d399"><circle cx="1141" cy="620" r="2"/><circle cx="1172" cy="620" r="2"/></g>
+  <g fill="#4b5063"><circle cx="1203" cy="620" r="2"/><circle cx="1234" cy="620" r="2"/></g>
+  <!-- Raspberry Pi 5 -->
+  <rect x="1278" y="612" width="58" height="28" rx="4" fill="#d1d5db"/>
+  <rect x="1278" y="612" width="58" height="9" rx="4" fill="#dc2626"/>
+  <circle cx="1307" cy="630" r="5" fill="#9ca3af"/>
+  <circle cx="1328" cy="633" r="1.8" fill="#34d399"/>
+  <!-- Reiserouter -->
+  <rect x="1346" y="618" width="58" height="22" rx="4" fill="#e5e7eb"/>
+  <line x1="1356" y1="618" x2="1352" y2="596" stroke="#9ca3af" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1394" y1="618" x2="1398" y2="596" stroke="#9ca3af" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#34d399"><circle cx="1362" cy="630" r="1.6"/><circle cx="1370" cy="630" r="1.6"/><circle cx="1378" cy="630" r="1.6"/></g>
+
+  <!-- ===== Beschriftungen ===== -->
+  <g font-size="14">
+    <line x1="221" y1="288" x2="221" y2="222" stroke="#6b7190"/>
+    <text x="135" y="196" fill="#f1f0ff" font-weight="700" font-size="16">Gaming- &amp; KI-PC</text>
+    <text x="135" y="215" fill="#9ca3c4">9800X3D · RTX 5090 · 64 GB RAM · 360er-AIO</text>
+    <text x="520" y="315" fill="#f1f0ff" font-weight="700" font-size="16" text-anchor="middle">4K-OLED · 240 Hz</text>
+    <text x="830" y="462" fill="#f1f0ff" font-weight="700" font-size="15" text-anchor="middle">Uni-Laptop</text>
+    <text x="1055" y="850" fill="#f1f0ff" font-weight="700" font-size="15" text-anchor="middle">KI-Server</text>
+    <text x="1055" y="868" fill="#c9a227" font-size="12" text-anchor="middle">RTX PRO 6000 · 96 GB</text>
+
+    <line x1="1258" y1="560" x2="1490" y2="470" stroke="#6b7190"/>
+    <text x="1496" y="466" fill="#f1f0ff" font-weight="700" font-size="16">NAS · 4× 20 TB</text>
+    <text x="1496" y="485" fill="#9ca3c4">Speicher · Backups lokal</text>
+    <text x="1496" y="502" fill="#9ca3c4">n8n · Immich · Docker</text>
+
+    <line x1="1307" y1="612" x2="1490" y2="580" stroke="#6b7190"/>
+    <text x="1496" y="576" fill="#f1f0ff" font-weight="700" font-size="16">Raspberry Pi 5</text>
+    <text x="1496" y="595" fill="#9ca3c4">Werbeblocker · VPN</text>
+
+    <line x1="1404" y1="630" x2="1490" y2="680" stroke="#6b7190"/>
+    <text x="1496" y="684" fill="#f1f0ff" font-weight="700" font-size="16">Reiserouter</text>
+    <text x="1496" y="703" fill="#9ca3c4">eigenes Netz im WG-WLAN</text>
+  </g>
+
+  <g font-size="13" fill="#9ca3c4">
+    <line x1="60" y1="900" x2="100" y2="900" stroke="#22d3ee" stroke-width="2" stroke-dasharray="6 5"/>
+    <text x="110" y="905">Heimnetz · Fernzugriff nur auf eigene Geräte (WireGuard)</text>
+    <text x="60" y="940" fill="#6b7190">Schätzung Anschaffung ≈ 25.000 – 29.500 € · Strom ≈ 450 – 700 € / Jahr</text>
+  </g>
+</svg>
